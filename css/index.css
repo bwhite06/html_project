@@ -17,3 +17,9 @@
     margin-top: 100px;
 
 }
+.bgimage {
+    background-image: url('/images/ocean.jpg');   
+    background-position:center center;
+    background-size:cover;
+    height:200px;
+}
