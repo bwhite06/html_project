@@ -11,8 +11,7 @@
      //   console.log(y);
    //     let arr = x.split(" ");
     //   console.log(arr)
-      //      let searchNew = arr.filter(el  => el.toLowerCase().indexOf(y.toLowerCase())!== -1
-        
+      //        
       //      );
 
 
@@ -21,19 +20,28 @@
 
 
  // });
+ $(document).ready(function(){
   
- $(function() {
-    $('#text-search').bind('keyup change', function(ev) {
-        // pull in the new value
-        var searchNew = $(this).val();
- 
-        // disable highlighting if empty
-        if ( searchNew ) {
-            // highlight the new term
-            $('body').highlight( searchNew );
-        }
-    });
+    console.log($('body'));
+        
+  $('#btn').bind('click', function(ev) {
+    ev.preventDefault();
+      // pull in the new value
+      var searchNew = $("#text-search").val();
+
+      // disable highlighting if empty
+      if ( searchNew ) {
+       
+          // highlight the new term
+          $('body')[0].classList.toggle("mark");
+
+          
+      }
+    
+  });
+
 });
+
 
     
 
