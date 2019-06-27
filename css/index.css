@@ -1,8 +1,19 @@
 .new{
     border: 1px solid black;
     display:block;
-    
+
 }
 .displayBlank{
     display:none;
+}
+.CustomNavbar{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    border: 1px solid black;
+    border-top: 0ch;
+}
+.new div{
+    margin-top: 100px;
+
 }
